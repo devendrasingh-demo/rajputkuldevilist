@@ -1,0 +1,20 @@
+// kuldevi.js
+function showKuldevi() {
+  var caste = document.getElementById("caste").value.trim();
+  var display = document.getElementById("kuldevi");
+  var data = {
+    "राठौड़": "नागणेचिया माता",
+    "गहलोत": "बाणेश्वरी माता",
+    "कछवाहा": "जमवाय माता",
+    "दहिया": "कैवाय माता",
+    "गोहिल": "बाणेश्वरी माता",
+    "चौहान": "आशापूर्णा माता",
+    "परमार": "सच्चियाय माता"
+  };
+  display.style.display = "block";
+  if (data[caste]) {
+    display.innerHTML = "आपकी कुलदेवी: <strong>" + data[caste] + "</strong>";
+  } else {
+    display.innerHTML = "कुलदेवी की जानकारी नहीं मिली।";
+  }
+}
